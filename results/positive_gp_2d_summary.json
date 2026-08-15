@@ -1,0 +1,76 @@
+{
+  "region": {
+    "rows": 296,
+    "extent_km": [
+      475.0,
+      475.0
+    ],
+    "occupied_fraction_of_20x20_grid": 0.74,
+    "quadrant_fold_sizes": [
+      78,
+      81,
+      79,
+      58
+    ]
+  },
+  "fixed_model": {
+    "sigma_m": {
+      "CS2": 0.05,
+      "IS2": 0.02
+    },
+    "lengthscales_km": {
+      "Hi": 200.0,
+      "Hs": 100.0
+    },
+    "inducing_points": 49
+  },
+  "point_nearest": {
+    "CS2": {
+      "RMSE_m": 0.05394958866799595,
+      "MAE_m": 0.042490327347438774,
+      "bias_m": 0.004037727827705377
+    },
+    "IS2": {
+      "RMSE_m": 0.05396562063832227,
+      "MAE_m": 0.04068168621900648,
+      "bias_m": 0.010587651549759306
+    }
+  },
+  "positive_gp": {
+    "CS2": {
+      "RMSE_m": 0.04714573036121205,
+      "MAE_m": 0.03574867159382208,
+      "bias_m": -0.019474599854634234
+    },
+    "IS2": {
+      "RMSE_m": 0.04521529914786469,
+      "MAE_m": 0.03499722445908597,
+      "bias_m": 0.02146203771300662
+    },
+    "negative_Hi": 0,
+    "negative_Hs": 0
+  },
+  "fold_losses": [
+    {
+      "fold": 0,
+      "test_rows": 78,
+      "final_loss": -804.0932541563047
+    },
+    {
+      "fold": 1,
+      "test_rows": 81,
+      "final_loss": -807.5560186724783
+    },
+    {
+      "fold": 2,
+      "test_rows": 79,
+      "final_loss": -748.5799852104038
+    },
+    {
+      "fold": 3,
+      "test_rows": 58,
+      "final_loss": -838.8679649906251
+    }
+  ],
+  "full_visualization_fit_loss": -1068.6457422789763
+}

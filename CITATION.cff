@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite this MSc dissertation repository if you reuse its code."
+title: "Physically informed multi-output GP retrieval of Arctic sea ice"
+type: software
+authors:
+  - family-names: Fan
+    given-names: Jingwen
+year: 2026
+url: "https://github.com/fanjingwen53-pixel/sea-ice-multioutput-gp"

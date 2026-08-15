@@ -1,0 +1,378 @@
+{
+  "design": {
+    "domain_km": [
+      0.0,
+      1000.0
+    ],
+    "dense_truth_points": 401,
+    "replicate_seeds": [
+      11,
+      29,
+      47,
+      83
+    ],
+    "model_assumed_alpha": {
+      "CS2": 1.0,
+      "IS2": 0.0
+    },
+    "fixed_lengthscales_km": {
+      "Hi": 150.0,
+      "Hs": 75.0
+    },
+    "training_steps": 120
+  },
+  "aggregates": [
+    {
+      "scenario": "noise_low",
+      "factor": "noise",
+      "level": "low",
+      "method": "Point + linear",
+      "latent": "Hi",
+      "mean_RMSE_m": 0.06904613233005641,
+      "std_RMSE_m": 0.006247384565470003,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "noise_low",
+      "factor": "noise",
+      "level": "low",
+      "method": "Point + linear",
+      "latent": "Hs",
+      "mean_RMSE_m": 0.012146110389678052,
+      "std_RMSE_m": 0.0017458821894670575,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "noise_low",
+      "factor": "noise",
+      "level": "low",
+      "method": "Positive GP",
+      "latent": "Hi",
+      "mean_RMSE_m": 0.0397467403000189,
+      "std_RMSE_m": 0.009044341025940983,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "noise_low",
+      "factor": "noise",
+      "level": "low",
+      "method": "Positive GP",
+      "latent": "Hs",
+      "mean_RMSE_m": 0.0098119245136582,
+      "std_RMSE_m": 0.002068392830946562,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "noise_nominal",
+      "factor": "noise",
+      "level": "nominal",
+      "method": "Point + linear",
+      "latent": "Hi",
+      "mean_RMSE_m": 0.1501820078162001,
+      "std_RMSE_m": 0.011385361396303724,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "noise_nominal",
+      "factor": "noise",
+      "level": "nominal",
+      "method": "Point + linear",
+      "latent": "Hs",
+      "mean_RMSE_m": 0.020785582452189692,
+      "std_RMSE_m": 0.002120331840496172,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "noise_nominal",
+      "factor": "noise",
+      "level": "nominal",
+      "method": "Positive GP",
+      "latent": "Hi",
+      "mean_RMSE_m": 0.09353302188157346,
+      "std_RMSE_m": 0.017827341264391717,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "noise_nominal",
+      "factor": "noise",
+      "level": "nominal",
+      "method": "Positive GP",
+      "latent": "Hs",
+      "mean_RMSE_m": 0.015082419391256634,
+      "std_RMSE_m": 0.0023483724388304395,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "noise_high",
+      "factor": "noise",
+      "level": "high",
+      "method": "Point + linear",
+      "latent": "Hi",
+      "mean_RMSE_m": 0.26973766199315435,
+      "std_RMSE_m": 0.034236744795605394,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "noise_high",
+      "factor": "noise",
+      "level": "high",
+      "method": "Point + linear",
+      "latent": "Hs",
+      "mean_RMSE_m": 0.047093422207644876,
+      "std_RMSE_m": 0.005172985314949051,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "noise_high",
+      "factor": "noise",
+      "level": "high",
+      "method": "Positive GP",
+      "latent": "Hi",
+      "mean_RMSE_m": 0.137450720962993,
+      "std_RMSE_m": 0.011230181132185674,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "noise_high",
+      "factor": "noise",
+      "level": "high",
+      "method": "Positive GP",
+      "latent": "Hs",
+      "mean_RMSE_m": 0.02732527980002316,
+      "std_RMSE_m": 0.0028386636371771764,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "density_sparse",
+      "factor": "density",
+      "level": "25 observations",
+      "method": "Point + linear",
+      "latent": "Hi",
+      "mean_RMSE_m": 0.14186549603158383,
+      "std_RMSE_m": 0.030488332047522847,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "density_sparse",
+      "factor": "density",
+      "level": "25 observations",
+      "method": "Point + linear",
+      "latent": "Hs",
+      "mean_RMSE_m": 0.028787241569389638,
+      "std_RMSE_m": 0.005153892117714517,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "density_sparse",
+      "factor": "density",
+      "level": "25 observations",
+      "method": "Positive GP",
+      "latent": "Hi",
+      "mean_RMSE_m": 0.13518823454540274,
+      "std_RMSE_m": 0.04160089959944557,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "density_sparse",
+      "factor": "density",
+      "level": "25 observations",
+      "method": "Positive GP",
+      "latent": "Hs",
+      "mean_RMSE_m": 0.025542184660614045,
+      "std_RMSE_m": 0.004853292546558781,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "density_dense",
+      "factor": "density",
+      "level": "120 observations",
+      "method": "Point + linear",
+      "latent": "Hi",
+      "mean_RMSE_m": 0.143486675913217,
+      "std_RMSE_m": 0.013216658932721233,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "density_dense",
+      "factor": "density",
+      "level": "120 observations",
+      "method": "Point + linear",
+      "latent": "Hs",
+      "mean_RMSE_m": 0.021728511608123995,
+      "std_RMSE_m": 0.0016788980845291032,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "density_dense",
+      "factor": "density",
+      "level": "120 observations",
+      "method": "Positive GP",
+      "latent": "Hi",
+      "mean_RMSE_m": 0.06076868534359966,
+      "std_RMSE_m": 0.005654041383717737,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "density_dense",
+      "factor": "density",
+      "level": "120 observations",
+      "method": "Positive GP",
+      "latent": "Hs",
+      "mean_RMSE_m": 0.012005712722532015,
+      "std_RMSE_m": 0.0007416476916351273,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "penetration_radar_partial",
+      "factor": "penetration",
+      "level": "true alpha_cs=0.8",
+      "method": "Point + linear",
+      "latent": "Hi",
+      "mean_RMSE_m": 0.29890248384581974,
+      "std_RMSE_m": 0.03526537814572927,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "penetration_radar_partial",
+      "factor": "penetration",
+      "level": "true alpha_cs=0.8",
+      "method": "Point + linear",
+      "latent": "Hs",
+      "mean_RMSE_m": 0.04687644630383782,
+      "std_RMSE_m": 0.0022149751571106857,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "penetration_radar_partial",
+      "factor": "penetration",
+      "level": "true alpha_cs=0.8",
+      "method": "Positive GP",
+      "latent": "Hi",
+      "mean_RMSE_m": 0.2723527305465384,
+      "std_RMSE_m": 0.03698940557847676,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "penetration_radar_partial",
+      "factor": "penetration",
+      "level": "true alpha_cs=0.8",
+      "method": "Positive GP",
+      "latent": "Hs",
+      "mean_RMSE_m": 0.042242009897350996,
+      "std_RMSE_m": 0.0032061729259024686,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "penetration_laser_partial",
+      "factor": "penetration",
+      "level": "true alpha_is=0.1",
+      "method": "Point + linear",
+      "latent": "Hi",
+      "mean_RMSE_m": 0.17896727500817328,
+      "std_RMSE_m": 0.03598942052312182,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "penetration_laser_partial",
+      "factor": "penetration",
+      "level": "true alpha_is=0.1",
+      "method": "Point + linear",
+      "latent": "Hs",
+      "mean_RMSE_m": 0.03146153593219128,
+      "std_RMSE_m": 0.00411099702673092,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "penetration_laser_partial",
+      "factor": "penetration",
+      "level": "true alpha_is=0.1",
+      "method": "Positive GP",
+      "latent": "Hi",
+      "mean_RMSE_m": 0.13978877662476583,
+      "std_RMSE_m": 0.03266429472675237,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "penetration_laser_partial",
+      "factor": "penetration",
+      "level": "true alpha_is=0.1",
+      "method": "Positive GP",
+      "latent": "Hs",
+      "mean_RMSE_m": 0.023263926477906073,
+      "std_RMSE_m": 0.0031323542381674094,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "penetration_combined",
+      "factor": "penetration",
+      "level": "true alpha_cs=0.8, alpha_is=0.1",
+      "method": "Point + linear",
+      "latent": "Hi",
+      "mean_RMSE_m": 0.21308958983804896,
+      "std_RMSE_m": 0.018423091951145165,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "penetration_combined",
+      "factor": "penetration",
+      "level": "true alpha_cs=0.8, alpha_is=0.1",
+      "method": "Point + linear",
+      "latent": "Hs",
+      "mean_RMSE_m": 0.06710133638593063,
+      "std_RMSE_m": 0.0016690022191711642,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "penetration_combined",
+      "factor": "penetration",
+      "level": "true alpha_cs=0.8, alpha_is=0.1",
+      "method": "Positive GP",
+      "latent": "Hi",
+      "mean_RMSE_m": 0.17520222657220672,
+      "std_RMSE_m": 0.028920047488191505,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    },
+    {
+      "scenario": "penetration_combined",
+      "factor": "penetration",
+      "level": "true alpha_cs=0.8, alpha_is=0.1",
+      "method": "Positive GP",
+      "latent": "Hs",
+      "mean_RMSE_m": 0.06253625201940158,
+      "std_RMSE_m": 0.0029385890708240486,
+      "replicates": 4,
+      "total_negative_predictions": 0
+    }
+  ]
+}

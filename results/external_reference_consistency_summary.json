@@ -1,0 +1,77 @@
+{
+  "reference": {
+    "product": "IS2SITMOGR4 version 003",
+    "month": "March 2020 monthly",
+    "matched_rows": 53,
+    "maximum_collocation_distance_m": 12500.0,
+    "independence_status": "external comparison product, not independent truth",
+    "dependence_reason": "ice thickness uses ICESat-2 ATL10 freeboard and NESOSIM snow loading; snow depth is redistributed NESOSIM v1.1",
+    "time_mismatch": "monthly reference versus March 8-labelled 15-day retrieval window",
+    "coordinate_correction": "source EPSG:3411 was correctly transformed to EASE2 North; the existing server preprocessing used an incorrect lon_0=0 source definition"
+  },
+  "methods": {
+    "Point + linear": {
+      "Hi": {
+        "RMSE_m": 0.9281333721605833,
+        "MAE_m": 0.5692241992199952,
+        "bias_m": -0.06062939349414486,
+        "correlation": 0.31823703837877654,
+        "uncertainty_weighted_RMSE_m": 0.824868796815471
+      },
+      "Hs": {
+        "RMSE_m": 0.08636573601503576,
+        "MAE_m": 0.07500304958375727,
+        "bias_m": -0.0570964499010485,
+        "correlation": 0.42234096162512186
+      }
+    },
+    "Nested linear GP": {
+      "Hi": {
+        "RMSE_m": 0.8865496643677339,
+        "MAE_m": 0.49719574810613476,
+        "bias_m": -0.22807661476439703,
+        "correlation": 0.46288595244193304,
+        "uncertainty_weighted_RMSE_m": 0.7696244326982244,
+        "combined_95_interval_coverage": 0.9056603773584906
+      },
+      "Hs": {
+        "RMSE_m": 0.0773511803728252,
+        "MAE_m": 0.06332937788653645,
+        "bias_m": -0.034003099514735305,
+        "correlation": 0.40979404934041136
+      }
+    },
+    "Positive GP": {
+      "Hi": {
+        "RMSE_m": 0.9515785609121129,
+        "MAE_m": 0.5959208701665373,
+        "bias_m": -0.1487194632922405,
+        "correlation": 0.2710566054641252,
+        "uncertainty_weighted_RMSE_m": 0.8345326552666997,
+        "combined_95_interval_coverage": 0.8867924528301887
+      },
+      "Hs": {
+        "RMSE_m": 0.08138281960178768,
+        "MAE_m": 0.06720441875196162,
+        "bias_m": -0.05065341335349298,
+        "correlation": 0.22293778432348646
+      }
+    },
+    "Hard-positive DRF": {
+      "Hi": {
+        "RMSE_m": 0.895402966010784,
+        "MAE_m": 0.6281703598208012,
+        "bias_m": 0.12356886834994622,
+        "correlation": 0.4025436829019874,
+        "uncertainty_weighted_RMSE_m": 0.8213512790859859,
+        "combined_95_interval_coverage": 0.8867924528301887
+      },
+      "Hs": {
+        "RMSE_m": 0.0707992843405627,
+        "MAE_m": 0.06152136269575291,
+        "bias_m": -0.03049237432485177,
+        "correlation": 0.8081028547429688
+      }
+    }
+  }
+}

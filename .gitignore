@@ -1,0 +1,36 @@
+.DS_Store
+Thumbs.db
+
+# Python and notebooks
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Local configuration, credentials and SSH material
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+authorized_keys
+known_hosts
+*credentials*
+
+# Restricted or local data
+data/raw/
+data/processed/
+data/external/
+
+# Large observation-level model outputs
+results/*predictions.csv
+results/*model_comparison.csv
+results/*selection.json
+
+# Generated figures and logs
+figures/*.pdf
+*.log
